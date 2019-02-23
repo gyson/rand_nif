@@ -32,6 +32,15 @@ defmodule RandNif.Bench.Comparison do
             end
           )
         end,
+        "RandNif.uniform_noop/0" => fn ->
+          unquote(
+            for _ <- 1..@n do
+              quote do
+                RandNif.uniform_noop()
+              end
+            end
+          )
+        end,
         "RandNif.uniform/1" => fn ->
           unquote(
             for _ <- 1..@n do

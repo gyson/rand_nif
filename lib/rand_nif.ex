@@ -14,6 +14,9 @@ defmodule RandNif do
 
   def uniform(), do: :erlang.nif_error(:nif_not_loaded)
 
+  @doc false
+  def uniform_noop(), do: :erlang.nif_error(:nif_not_loaded)
+
   @doc """
   Return a positive integer within specified range, similar to `:rand.uniform/1`.
 

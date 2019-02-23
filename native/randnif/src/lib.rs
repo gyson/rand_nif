@@ -8,12 +8,18 @@ use rand::{thread_rng, Rng};
 rustler_export_nifs! {
     "Elixir.RandNif",
     [("uniform", 0, uniform_0),
+     ("uniform_noop", 0, uniform_noop_0),
      ("uniform", 1, uniform_1)],
     None
 }
 
 fn uniform_0<'a>(env: Env<'a>, _args: &[Term<'a>]) -> NifResult<Term<'a>> {
     Ok(thread_rng().gen::<f64>().encode(env))
+}
+
+fn uniform_noop_0<'a>(env: Env<'a>, _args: &[Term<'a>]) -> NifResult<Term<'a>> {
+    let x: f64 = 0.0;
+    Ok(x.encode(env))
 }
 
 fn uniform_1<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
