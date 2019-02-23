@@ -2,6 +2,10 @@
 
 RandNif is a native implementation (NIF) in Rust for random number generator, similar to [`:rand`](http://erlang.org/doc/man/rand.html) module.
 
+It uses Rust's [`rand`](https://github.com/rust-random/rand) library for actual random number generator implementation.
+
+It uses [`rustler`](https://github.com/hansihe/Rustler) for NIF integration.
+
 ## Installation
 
 The package can be installed by adding `rand_nif` to your list of dependencies in `mix.exs`:
