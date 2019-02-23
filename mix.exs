@@ -45,8 +45,7 @@ defmodule RandNif.MixProject do
 
   def package do
     %{
-      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
-                license* CHANGELOG* changelog* src native)
+      files: ~w(lib priv .formatter.exs mix.exs README* LICENSE* native),
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/gyson/rand_nif"}
     }

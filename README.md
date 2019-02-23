@@ -15,7 +15,7 @@ The package can be installed by adding `rand_nif` to your list of dependencies i
 ```elixir
 def deps do
   [
-    {:rand_nif, "~> 0.1.0"}
+    {:rand_nif, "~> 0.1.1"}
   ]
 end
 ```
