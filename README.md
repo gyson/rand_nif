@@ -6,6 +6,8 @@ It uses Rust's [`rand`](https://github.com/rust-random/rand) library for actual 
 
 It uses [`rustler`](https://github.com/hansihe/Rustler) for NIF integration.
 
+Note: this is mostly an **experiment** so far, you may not want to use it in production.
+
 ## Installation
 
 The package can be installed by adding `rand_nif` to your list of dependencies in `mix.exs`:
