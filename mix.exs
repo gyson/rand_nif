@@ -8,8 +8,12 @@ defmodule RandNif.MixProject do
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      package: package(),
       compilers: [:rustler] ++ Mix.compilers(),
-      rustler_crates: rustler_crates()
+      rustler_crates: rustler_crates(),
+      description: "RandNif is a native implementation (NIF) in Rust for random number generator, similar to :rand module",
+      name: "RandNif",
+      source_url: "https://github.com/gyson/rand_nif"
     ]
   end
 
@@ -37,5 +41,12 @@ defmodule RandNif.MixProject do
         mode: :release
       ]
     ]
+  end
+
+  def package do
+    %{
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/gyson/rand_nif"}
+    }
   end
 end
