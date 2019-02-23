@@ -22,3 +22,7 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 rand_nif-*.tar
 
+/native/randnif/Cargo.lock
+/native/randnif/target
+
+/priv/native/*.so
