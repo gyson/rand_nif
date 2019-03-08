@@ -35,6 +35,10 @@ iex(4)> RandNif.uniform(10)
 2
 ```
 
+## Analysis
+
+[RandNif: an experiment to speed up random number generator with Rust](https://elixirforum.com/t/randnif-an-experiment-to-speed-up-random-number-generator-with-rust/20395)
+
 ## Benchmarks
 
 A simple benchmark scirpt to compare `RandNif` and `:rand` module can be found at `bench/comparison.exs`. Result is as following:
